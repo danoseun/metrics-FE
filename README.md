@@ -26,5 +26,12 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-## FE Link Here
+## FE URL Here
 - https://metrics-fe.vercel.app/
+
+## DESIGN DECISIONS
+- The submit button only becomes active when a name and value is entered to create a metric. This will reduce the number of unwarranted requests to the backend
+
+- To help UX, all views(creation and viewing of metrics) happen ona single page
+
+- Default view on page load are records created in the last 7days.
